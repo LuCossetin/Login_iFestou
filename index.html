@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastra-se</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container imagem">
+        <img src="./images/image 7.png" alt="homem com balão">
+    </div>
+    <div class="container">
+        <div>
+            <h1 class="title"> Cadastre-se </h1>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="InputName1" class="form-label">Nome</label>
+                <input type="text" class="form-control borda" id="InputName1" placeholder="Nome">
+            </div>
+            <div class="mb-3">
+                <label for="InputLastName1" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control borda" id="InputLastName1" placeholder="Sobrenome">
+            </div>
+            <div class="mb-3">
+              <label for="InputEmail1" class="form-label">E-mail</label>
+              <input type="email" class="form-control borda" id="InputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+              <!-- <div id="emailHelp" class="form-text"> * Não iremos compartilhar seu e-mail com mais ninguém.</div> -->
+            </div>
+            <div class="mb-3">
+              <label for="InputPhone1" class="form-label">Telefone</label>
+              <input type="tel" class="form-control borda" id="InputPhone1" onkeyup="handlePhone(event)" maxlength="15" placeholder="Telefone">
+            </div>
+            <div class="button">
+               <button type="submit" class="btn-1">Cadastre-se</button>
+            </div>
+        </form>
+        <div class="SocialMedia">
+            <div class="login">
+                <img src="./images/logo_facebook.png" alt="logo Facebook">
+                <a href="https://www.facebook.com/login/?locale=pt_BR"> Entrar com o Facebook </a>
+                <span></span>
+            </div>
+            <div class="login">
+                <img src="./images/google-logo.png" alt="logo google">
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AdF4I76sb93R9bXhBaUwMqtaWJNZ9EmKvGFki3FJUNZa2UJ-cyLREjAkqtTiq9PRE6-vb4pTUUODvw&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1324659364%3A1720798251729459&ddm=0"> Entrar com o Gmail </a>
+                <span></span>
+            </div>
+            <div class="login">
+                <img src="./images/mac-os-logo.png" alt="logo apple">
+                <a href="https://www.icloud.com/">Entrar com Apple</a>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./phoneMask.js"></script>
+    <div class="container imagem">
+        <img src="./images/mulher.png" alt="mulher com champagne na mão">
+    </div>
+</body>
+</html>
