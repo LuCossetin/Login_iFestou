@@ -1,64 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- <div class="container imagem">
-        <img src="./images/image 7.png" alt="homem com balão">
-    </div> -->
-    <div class="container">
-        <div>
-            <h1 class="title"> Cadastre-se </h1>
-        </div>
-        <form>
-            <div class="mb-3">
-                <label for="InputName1" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="InputName1" placeholder="Nome">
+
+    <header>
+        <nav class="navbar">
+            <a href="#">
+                <img src="./assets/images/logo.png" class="media-object">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link"> Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Sobre Nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Criar Eventos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Anunciar Serviços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Cadastre-se</a></li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
             </div>
-            <div class="mb-3">
-                <label for="InputLastName1" class="form-label">Sobrenome</label>
-                <input type="text" class="form-control" id="InputLastName1" placeholder="Sobrenome">
-            </div>
-            <div class="mb-3">
-              <label for="InputEmail1" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
-              <!-- <div id="emailHelp" class="form-text"> * Não iremos compartilhar seu e-mail com mais ninguém.</div> -->
-            </div>
-            <div class="mb-3">
-              <label for="InputPhone1" class="form-label">Telefone</label>
-              <input type="tel" class="form-control" id="InputPhone1" onkeyup="handlePhone(event)" maxlength="15" placeholder="Telefone">
-            </div>
-            <div class="button">
-               <button type="submit" class="btn-1">Cadastre-se</button>
-            </div>
-        </form>
-        <div class="SocialMedia">
-            <div class="login">
-                <img src="./images/logo_facebook.png" alt="logo Facebook">
-                <a href="https://www.facebook.com/login/?locale=pt_BR"> Entrar com o Facebook </a>
-                <span></span>
-            </div>
-            <div class="login">
-                <img src="./images/google-logo.png" alt="logo google">
-                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AdF4I76sb93R9bXhBaUwMqtaWJNZ9EmKvGFki3FJUNZa2UJ-cyLREjAkqtTiq9PRE6-vb4pTUUODvw&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1324659364%3A1720798251729459&ddm=0"> Entrar com o Gmail </a>
-                <span></span>
-            </div>
-            <div class="login">
-                <img src="./images/mac-os-logo.png" alt="logo apple">
-                <a href="https://www.icloud.com/">Entrar com Apple</a>
-                <span></span>
+        </nav>
+
+
+    </header>
+
+
+    <div class="main">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./assets/images/image 7.png" alt="" class="img1">
+                </div>
+                <div class="col-6">
+                    <img src="./assets/images/mulher.png" alt="" class="img2">
+                </div>
+                <div class="overlay">
+                    <div>
+                        <h1 class="title"> Cadastre-se </h1>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputName1" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="InputName1" placeholder="Nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputLastName1" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="InputLastName1" placeholder="Sobrenome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputEmail1" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                            placeholder="E-mail">
+                            <!-- <div id="emailHelp" class="form-text"> * Não iremos compartilhar seu e-mail com mais ninguém.</div> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPhone1" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="InputPhone1" onkeyup="handlePhone(event)"
+                            maxlength="15" placeholder="Telefone">
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="btn-1">Cadastre-se</button>
+                        </div>
+                    </form>
+                    <div class="SocialMedia">
+                        <div class="login">
+                            <img src="./assets/images/logo_facebook.png" alt="logo Facebook">
+                            <a href="https://www.facebook.com/login/?locale=pt_BR"> Entrar com o Facebook </a>
+                            <span></span>
+                        </div>
+                        <div class="login">
+                            <img src="./assets/images/google-logo.png" alt="logo google">
+                            <a
+                            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AdF4I76sb93R9bXhBaUwMqtaWJNZ9EmKvGFki3FJUNZa2UJ-cyLREjAkqtTiq9PRE6-vb4pTUUODvw&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1324659364%3A1720798251729459&ddm=0">
+                            Entrar com o Gmail </a>
+                            <span></span>
+                        </div>
+                        <div class="login">
+                            <img src="./assets/images/mac-os-logo.png" alt="logo apple">
+                            <a href="https://www.icloud.com/">Entrar com Apple</a>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- <div class="container imagem">
-        <img src="./images/mulher.png" alt="mulher com champagne na mão">
-    </div> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data theme">
+                    <img src="./assets/images/logo.png" alt="logo ifestou">
+                    <p class="footer__description"> Conectamos você <br> à festa perfeita!
+                    </p>
+
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">MAPA DO SITE</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Sobre Nós</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Ajuda</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Criar Eventos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">PARCEIROS</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Anunciar Serviços</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">àrea do Parceiro</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">PARTICIPE</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Cadastra-se</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">SIGA-NOS </h3>
+                    <div class="footer-social">
+
+
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2024 Equipe2. Todos os direitos reservados a iFestou.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Termos e Acordos</a>
+                    <a href="#" class="footer__terms-link">Politica de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./phoneMask.js"></script>
 </body>
+
 </html>
